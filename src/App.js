@@ -1,6 +1,6 @@
 import { Route, Switch } from 'react-router-dom';
 import NotMatch from './pages/NotMatch';
-import ǫuote from './pages/ǫuote';
+import Quote from './pages/Quote';
 import Home from './pages/Home';
 import Navbar from './components/Navbar';
 import Calculator from './components/Calculator';
@@ -16,7 +16,7 @@ const App = () => (
         <Calculator />
       </Route>
       <Route path="/quote">
-        <ǫuote />
+        <Quote />
       </Route>
       <Route path="*">
         <NotMatch />

@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'router-dom';
+import { NavLink } from 'react-router-dom';
 import Header from './Header';
 
 const links = [
@@ -9,24 +9,24 @@ const links = [
     text: 'Home',
   },
   {
-    id: 1,
-    path: '/',
+    id: 2,
+    path: '/calculator',
     text: 'Calculator',
   },
   {
-    id: 1,
-    path: '/',
-    text: 'ǫuote',
+    id: 3,
+    path: '/quote',
+    text: 'Quote',
   },
 ];
 
 const Navbar = () => (
   <nav className="navBar">
     <Header />
-    <ul>
+    <ul className="todoList">
       {links.map((link) => (
-        <li key={link.key}>
-          <NavLink to={link.path} activeClassName="active-link" exact>
+        <li key={link.id}>
+          <NavLink to={link.path} className="item" activeClassName="active-link" exact>
             {link.text}
           </NavLink>
         </li>
