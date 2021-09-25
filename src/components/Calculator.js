@@ -1,7 +1,6 @@
-/* eslint-disable import/extensions */
 import React, { useState } from 'react';
 import '../App.css';
-import calculate from '../logic/operate';
+import calculate from '../logic/calculate';
 import Button from './Button';
 
 const Calculator = () => {
@@ -53,47 +52,45 @@ const Calculator = () => {
   );
 
   return (
-    <>
+    <div className="calc-container">
+      <div>
+        <h3>Lets do some math!</h3>
+      </div>
       <div className="calculator-container">
-        <div>
-          <h3>Lets do some math!</h3>
+        <div className="row">
+          <div className="display">
+            <div className="input">{next || total || '0'}</div>
+          </div>
         </div>
-        <div className="calculator">
-          <div className="row">
-            <div className="display">
-              <div className="input">{next || total || '0'}</div>
-            </div>
-          </div>
-          <div className="row">
-            {utils}
-            {operators[0]}
-          </div>
-          <div className="row">
-            {digits[0]}
-            {digits[1]}
-            {digits[2]}
-            {operators[1]}
-          </div>
-          <div className="row">
-            {digits[3]}
-            {digits[4]}
-            {digits[5]}
-            {operators[2]}
-          </div>
-          <div className="row">
-            {digits[6]}
-            {digits[7]}
-            {digits[8]}
-            {operators[3]}
-          </div>
-          <div className="row bottom">
-            {digits[9]}
-            {digits[10]}
-            {operators[4]}
-          </div>
+        <div className="row">
+          {utils}
+          {operators[0]}
+        </div>
+        <div className="row">
+          {digits[0]}
+          {digits[1]}
+          {digits[2]}
+          {operators[1]}
+        </div>
+        <div className="row">
+          {digits[3]}
+          {digits[4]}
+          {digits[5]}
+          {operators[2]}
+        </div>
+        <div className="row">
+          {digits[6]}
+          {digits[7]}
+          {digits[8]}
+          {operators[3]}
+        </div>
+        <div className="row bottom">
+          {digits[9]}
+          {digits[10]}
+          {operators[4]}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

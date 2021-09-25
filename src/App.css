@@ -44,7 +44,7 @@ button {
   cursor: pointer;
 }
 
-.calculator-container {
+.calc-container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -75,7 +75,7 @@ button {
   padding: 40vh 0;
 }
 
-.calculator {
+.calculator-container {
   width: 50%;
 }
 
@@ -128,12 +128,12 @@ button {
 }
 
 @media only screen and (min-width: 767px) {
-  .calculator-container {
+  .calc-container {
     display: flex;
     align-items: flex-start;
   }
 
-  .calculator {
+  .calculator-container {
     min-width: 50%;
   }
 }
