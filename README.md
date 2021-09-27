@@ -10,6 +10,11 @@
 - React JS
 - Developed in VSCode
 
+## Live Demo
+
+[Netlify Live Demo Link](https://vast-chamber-50810.herokuapp.com/)
+[Netlify Live Demo Link](https://unruffled-mcnulty-aa9613.netlify.app)
+
 ## Setup 
 ### clone repository
 ```bash
