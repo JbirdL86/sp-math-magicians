@@ -4,7 +4,7 @@
       "es6": true,
       "jest": true
     },
-    "parser": "react-scripts/node_modules/babel-eslint",
+    "parser": "/node_modules/babel-eslint",
     "parserOptions": {
       "ecmaFeatures": {
         "jsx": true
